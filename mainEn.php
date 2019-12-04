@@ -10,14 +10,14 @@ session_start();
         </title>
         <meta charset="UTF-8"> 
         <link rel="stylesheet"
-              href="styleMain.css">
+              href="stylesCss/styleMain.css">
     </head>
     <body>
         <div class="flexcontainer">
             <?php
             include ('enTete.php');
             ?>
-            <div class="dropdown" style="flex-basis: 12%">
+            <div class="dropdown" style="flex-basis: 12%; background-image: url('images/internet.png');">
                 <div class="dropdown-content" style="right: 0">
                     <a href="main.php">Français (FR)</a>
                     <a href="mainEn.php">English (EN)</a>
