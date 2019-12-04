@@ -40,6 +40,7 @@ session_start();
                                     height="50px" 
                                     width="40px" />        
                             </div>
+                        
                             <?php
                             echo "Nom : <br>";
                             echo "Prénom : <br>";
@@ -66,8 +67,6 @@ session_start();
                             <input class="buttonStat" type="button" value="Voir mes statistiques">
                         </div>
                 <?php
-                echo "<a href=\"main.php\">back</a>";
-
                 echo"<a href=\"logOut.php\">Log out</a>";
                 ?>
             </div>
