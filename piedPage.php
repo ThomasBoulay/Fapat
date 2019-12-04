@@ -1,12 +1,12 @@
 <div class="flexcontainer" style="position : fixed; bottom: 0;">
     <div style="flex-basis: 5%">
-        <img src="logo%20infinite%20measures.PNG" style="height: 100%; width: 100%; object-fit: contain">
+        <img src="images/logo%20infinite%20measures.PNG" style="height: 100%; width: 100%; object-fit: contain">
     </div>
     <div style="flex-basis: 4%">
-        <img src="Logo.png" style="height: 100%; width: 100%; object-fit: contain">
+        <img src="images/Logo.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
     <div style="flex-basis: 10%">
-        <img src="CapSens.png" style="height: 100%; width: 100%; object-fit: contain">
+        <img src="images/CapSens.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
     <div style="flex-basis: 21%"></div>
     <a href="NousContacter.php" class="buttonFoot" style="flex-basis: 20%">

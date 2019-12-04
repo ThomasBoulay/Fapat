@@ -37,7 +37,7 @@
             </div>
         </div>
         <div class="image">
-            <img src="images\pilote.jpg" width="45%" height="240%">
+            <img src="images/pilote.jpg" width="45%" height="240%">
             </a>
         </div>
         <div class="texte">
