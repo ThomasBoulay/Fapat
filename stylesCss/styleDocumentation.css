@@ -1,0 +1,27 @@
+.doc {
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+}
+.doc a{
+    font-size: 15px;
+}
+.doc > a:hover{
+    background-color: #636660;
+    list-style: none;
+}
+.doc :hover{
+    background-color: #636660;
+}
+.image{
+    position: absolute;
+    top: 250px;
+    right: -400px;
+}
+.texte{
+    position: fixed;
+    text-align: left;
+    top: 250px;
+    left:80px;
+}

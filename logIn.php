@@ -8,13 +8,21 @@ if (isset($_POST['username'],$_POST['password'])) {
 
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $rep = $db->query("SELECT username,password FROM users WHERE username = '".$username."'");
+    $rep = $db->query("SELECT username,password,admin FROM users WHERE username = '".$username."'");
     $data = $rep->fetch();
     
     if($password==$data['password']){
-        $_SESSION['logged']=$username.$password;
-        header('Location: profil.php');
-        exit;
+        $_SESSION['logged']=$username;
+        
+        if($data['admin']==1){
+            $_SESSION['gestion'];
+            header('Location: gestion.php');
+            exit;
+        }
+        else{
+            header('Location: profil.php');
+            exit;
+        }
     }
     else{
         $_SESSION['failed'] = 1;

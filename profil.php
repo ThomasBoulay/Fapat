@@ -10,16 +10,16 @@ session_start();
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
-              href="styleMain.css">
+              href="stylesCss/styleMain.css">
          <link rel="stylesheet"
-              href="styleProfile.css">
+              href="stylesCss/styleProfile.css">
     </head>
     <body>
         <div class="flexcontainer">
             <?php
             include ('enTete.php');
             ?>
-            <div class="dropdown" style="flex-basis: 12%">
+            <div class="dropdown" style="flex-basis: 12%; background-image: url('images/internet.png');">
                 <div class="dropdown-content" style="right: 0">
                     <a href="main.php">Français (FR)</a>
                     <a href="mainEn.php">English (EN)</a>
@@ -35,17 +35,18 @@ session_start();
 
                         <div class="profileText">
                             <div class = "flexPicture">
-                                <img class ="profilePicture" src="Airplane.png" 
+                                <img class ="profilePicture" src="images/Airplane.png"
                                     alt=""
                                     height="50px" 
                                     width="40px" />        
                             </div>
+                        
                             <?php
                             echo "Nom : <br>";
                             echo "Prénom : <br>";
                             echo "Pseudo : ".$_SESSION['logged']."<br>";
                             echo "ID : <br>";
-                            echo "Changer de mot de passe <br> <br>"
+                            echo "Changer de mot de passe <br> <br>";
                             ?>
 
                             <label for="pswd">
@@ -66,8 +67,6 @@ session_start();
                             <input class="buttonStat" type="button" value="Voir mes statistiques">
                         </div>
                 <?php
-                echo "<a href=\"main.php\">back</a>";
-
                 echo"<a href=\"logOut.php\">Log out</a>";
                 ?>
             </div>
