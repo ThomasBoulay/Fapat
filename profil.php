@@ -10,9 +10,9 @@ session_start();
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
-              href="stylesCss\styleMain.css">
+              href="stylesCss/styleMain.css">
          <link rel="stylesheet"
-              href="stylesCss\styleProfile.css">
+              href="stylesCss/styleProfile.css">
     </head>
     <body>
         <div class="flexcontainer">
@@ -35,7 +35,7 @@ session_start();
 
                         <div class="profileText">
                             <div class = "flexPicture">
-                                <img class ="profilePicture" src="Airplane.png" 
+                                <img class ="profilePicture" src="images/Airplane.png"
                                     alt=""
                                     height="50px" 
                                     width="40px" />        
@@ -46,7 +46,7 @@ session_start();
                             echo "Prénom : <br>";
                             echo "Pseudo : ".$_SESSION['logged']."<br>";
                             echo "ID : <br>";
-                            echo "Changer de mot de passe <br> <br>"
+                            echo "Changer de mot de passe <br> <br>";
                             ?>
 
                             <label for="pswd">

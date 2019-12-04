@@ -6,9 +6,9 @@
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
-              href="stylesCss\styleMain.css">
+              href="stylesCss/styleMain.css">
         <link rel="stylesheet"
-              href="stylesCss\styleDocumentation.css">
+              href="stylesCss/styleDocumentation.css">
     </head>
     <body>
         <div class="flexcontainer">
