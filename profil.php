@@ -10,9 +10,9 @@ session_start();
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
-              href="styleMain.css">
+              href="stylesCss\styleMain.css">
          <link rel="stylesheet"
-              href="styleProfile.css">
+              href="stylesCss\styleProfile.css">
     </head>
     <body>
         <div class="flexcontainer">

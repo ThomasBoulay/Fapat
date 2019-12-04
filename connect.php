@@ -10,9 +10,9 @@
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
-              href="styleMain.css">
+              href="stylesCss\styleMain.css">
         <link rel="stylesheet"
-              href="styleConnect.css">
+              href="stylesCss\styleConnect.css">
     </head>
     <body>
         <div class="flexcontainer">

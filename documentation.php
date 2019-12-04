@@ -6,9 +6,9 @@
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
-              href="styleMain.css">
+              href="stylesCss\styleMain.css">
         <link rel="stylesheet"
-              href="styleDocumentation.css">
+              href="stylesCss\styleDocumentation.css">
     </head>
     <body>
         <div class="flexcontainer">
@@ -37,8 +37,7 @@
             </div>
         </div>
         <div class="image">
-            <a href="pilote.jpg" class="thumbnail">
-            <img src="pilote.jpg" width="45%" height="240%">
+            <img src="images\pilote.jpg" width="45%" height="240%">
             </a>
         </div>
         <div class="texte">
