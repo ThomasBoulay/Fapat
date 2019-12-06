@@ -29,8 +29,7 @@
 
         <div id="formulaire" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
             <form action="logIn.php" method="post" class="formulaire">
-                
-                <div class = "loginBox">
+                <div class="loginBox">
                     <div>
                     <label>
                         <b>Pseudo</b>
@@ -41,7 +40,7 @@
                         <b>Mot de Passe</b>
                     </label>
                     <input id="password" type="password" placeholder="Password" name="password" required>
-                </div>
+                    </div>
                     <button name="submit" type="submit" class="connect">
                         Se connecter
                     </button>
