@@ -20,8 +20,8 @@ session_start();
             <div class="dropdown">
                 <img src="images/internet.png" width="50" height="50">
                 <div class="dropdown-content" style= "right:0;">
-                    <a href="main.php">Français (FR)</a>
-                    <a href="mainEn.php">English (EN)</a>
+                    <a href="mainAdmin.php">Français (FR)</a>
+                    <a href="mainAdminEn.php">English (EN)</a>
                 </div>
             </div>
         </div>

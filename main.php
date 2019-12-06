@@ -27,10 +27,15 @@ session_start();
 
         <div>
             <?php
-            if (isset($_SESSION['logged'])==true){
-                        echo"<div class=\"corps\">
+            if (isset($_SESSION['logged'])){
+                if ($_SESSION['gestion']==true){
+                    echo"<div class=\"corps\">
+                <a href=\"mainAdmin.php\">Gestion</a>
+                </div>";
+                }
+                else {echo"<div class=\"corps\">
                 <a href=\"profil.php\">Profil</a>
-            </div>";
+                </div>";}
             }
             else{
                 echo"<div class=\"corps\">
@@ -40,7 +45,7 @@ session_start();
             ?>
             <div class="corps">
                 <a href="documentation.php">Documentation</a>
-                <a>Statistiques</a>
+                <a href="statistiques.php">Statistiques</a>
             </div>
         </div>
         <?php
