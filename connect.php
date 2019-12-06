@@ -27,8 +27,8 @@
             </div>
         </div>
 
-        <div id="login" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
-            <form action="logIn.php" method="post" class="login">
+        <div id="formulaire" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+            <form action="logIn.php" method="post" class="formulaire">
                 
                 <div class = "loginBox">
                     <div>
