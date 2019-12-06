@@ -45,7 +45,7 @@ session_start();
         <div class="dropdown">
             <img src="images/logoProfil.png" width="50" height="50">
                 <div class="dropdown-content">
-                    <a href="#">Ajouter un utilisateur</a>
+                    <a href="ajoutCandidat.php">Ajouter un utilisateur</a>
                     <a href="#">Modifier un profil</a>
                 </div>
         </div>
