@@ -24,31 +24,31 @@ session_start();
                 </div>
             </div>
         </div>
-        
-      <div class="dropdown">
-  <img src="images/logoTest.png" width="50" height="50">
-  <div class="dropdown-content">
-  <a href="#">Modifier</a>
-  <a href="#">Consulter</a>
-  </div>
-</div>
-    
-    <div class="dropdown">
-  <img src="images/logoInfo.png" width="50" height="50">
-  <div class="dropdown-content">
-  <a href="#">Documentation</a>
-  <a href="#">Statistiques</a>
-  </div>
-</div>
-    
-    <div class="dropdown">
-  <img src="images/logoProfil.png" width="50" height="50">
-  <div class="dropdown-content">
-  <a href="#">Ajouter un utilisateur</a>
-  <a href="#">Modifier un profil</a>
-  </div>
-</div>
-    
+      <div class="corps">  
+        <div class="dropdown">
+            <img src="images/logoTest.png" width="50" height="50">
+                <div class="dropdown-content">
+                    <a href="#">Modifier</a>
+                    <a href="#">Consulter</a>
+                </div>
+        </div>      
+          
+        <div class="dropdown">
+            <img src="images/logoInfo.png" width="50" height="50">
+                <div class="dropdown-content">
+                    <a href="#">Documentation</a>
+                    <a href="#">Statistiques</a>
+                </div>
+        </div>
+          
+        <div class="dropdown">
+            <img src="images/logoProfil.png" width="50" height="50">
+                <div class="dropdown-content">
+                    <a href="#">Ajouter un utilisateur</a>
+                    <a href="#">Modifier un profil</a>
+                </div>
+        </div>
+    </div>
         <?php
         include ('piedPage.php');
         ?>
