@@ -4,47 +4,76 @@ html{
 
 body {
     height: 100%;
-    background-color: white;
+    
     margin: 0px;
+}
+
+.background{
+    display:block;
+    height:90%;
+    width: 100%;
+    margin: auto;
+    background-image:url('../images/fighterPilot.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .flexcontainer {
     display: flex;
+    height: 100px;
+    padding:10px ;
 }
 
 .flexcontainer > div {
-    background-color: white;
+    background-color: white; opacity: 0.8;
     padding: 10px;
     margin: 0px;
     font-size: 50px;
     text-align: center;
 }
 
+.bodyContent{
+    display: flex;
+    height: 100%;
+    width: 85%;
+    justify-content: flex-end;
+}
+
 .corps {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-
+    flex-direction: column;
+    justify-content: center;
 }
 
 .corps > a {
-    background-color: #ff8533;
+    background-color: transparent;
     border: none;
     outline: none;
     cursor: pointer;
     padding: 30px;
     margin: 30px;
     font-size: 20px;
+    font-family: Candara;
+    font-weight: bold;
     color: white;
     text-align: center;
     text-decoration: none;
-    border-radius: 20px;
+
+    border-style: solid;
+    border-color: orange;
+    border-radius: 10px;
     width: 200px;
     
 }
 
 .corps > a:hover {
-    background-color: #ff751a;   
+    background-color: white;  
+    color:#ff8533;
+    transition: .5s;
+    opacity: 0.9;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: orange;
 }
 
 .buttonFoot {
@@ -102,3 +131,59 @@ body {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+/*Test nouveau menu*/
+
+
+.navBar {
+    display:flex;
+    margin:0px;
+    padding:0px;
+}
+
+.navBar ul{
+    position:fixed-top;
+    list-style-type: none;
+    margin: 0px 0px 0px 130px;
+    padding:0;
+}
+
+.navBar ul li{
+    float: left;
+    line-height: 100%;
+}
+.navBar ul li a{
+    display: inline-block;
+    padding: 30px 15px;
+    margin: auto;
+    vertical-align: auto;
+    height: 100%;
+    line-height: 20px;
+
+    text-decoration: none;
+    font-size: 15px;
+    color:black;
+    font-family: Candara;
+}
+
+
+.animated:hover{
+    color: red;
+}
+
+.animated::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition:all .5s;
+}
+
+.animated:hover::after{
+    width: 100%;
+    //transition: fill 1s forward;
+}
+
+

@@ -1,4 +1,4 @@
-.formulaire {
+.login {
     display: flex;
     flex-flow: column;
     justify-content: center;}
@@ -15,33 +15,13 @@ input[type=text], input[type=password] {
 .connect {
   background-color: #4CAF50;
   color: white;
-  padding: 14px;
-  margin: 15px;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
-  border-radius: 25px;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
 }
 
 button:hover {
   opacity: 0.8;
 }
-
-.loginBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 50px;
-}
-
-.loginBox > div{
-    padding: 35px;
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    width: 50%;
-    height: 100%;
-    transform: translate(-50% -50%);
-    
-}
-

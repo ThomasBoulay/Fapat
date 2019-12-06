@@ -6,7 +6,7 @@
 <html lang="en-US">
     <head>
         <title>
-        Connect (Fr)
+        Conect (Fr)
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
@@ -27,10 +27,9 @@
             </div>
         </div>
 
-        <div id="formulaire" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
-            <form action="logIn.php" method="post" class="formulaire">
-                <div class="loginBox">
-                    <div>
+        <div id="login" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
+            <form action="logIn.php" method="post" class="login">
+                <div style="padding: 15px">
                     <label>
                         <b>Pseudo</b>
                     </label>
@@ -40,7 +39,7 @@
                         <b>Mot de Passe</b>
                     </label>
                     <input id="password" type="password" placeholder="Password" name="password" required>
-                    </div>
+                    
                     <button name="submit" type="submit" class="connect">
                         Se connecter
                     </button>
