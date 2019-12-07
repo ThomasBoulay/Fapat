@@ -4,7 +4,7 @@ html{
 
 body {
     height: 100%;
-    margin: 0px;
+    margin: 0;
 }
 
 .background{
@@ -12,7 +12,6 @@ body {
     height:90%;
     width: 100%;
     margin: auto;
-    background-image:url('../images/fighterPilot.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index:-1;
@@ -130,7 +129,6 @@ body {
 }
 
 /*Test nouveau menu*/
-
 
 .textContent{
     display: flex;

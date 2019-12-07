@@ -11,11 +11,10 @@
               href="stylesCss/styleDocumentation.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
+
         <div class="flexcontainer">
             <div class="doc" style="flex-basis: 8%">
                 <a href="#">Armée de l'air</a>            

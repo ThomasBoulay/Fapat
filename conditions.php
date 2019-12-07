@@ -15,11 +15,9 @@ session_start();
               href="stylesCss/styleAPropos.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
 
         <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
             <h2>Conditions d'utilisation</h2>

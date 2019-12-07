@@ -15,11 +15,9 @@ session_start();
               href="stylesCss/styleContact.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
 
         <div style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
             <form action="form-to-email.php" method="post" class="contact">

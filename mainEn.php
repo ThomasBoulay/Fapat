@@ -13,11 +13,9 @@ session_start();
               href="stylesCss/styleMain.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
         
         <?php
             if (isset($_SESSION['logged'])==true){

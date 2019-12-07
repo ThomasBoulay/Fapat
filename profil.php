@@ -19,12 +19,10 @@ if(isset($_SESSION['logged'])==false){
               href="stylesCss/styleProfile.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-        </div>
-        
+        <?php
+        include ('enTete.php');
+        ?>
+
         <div class="profileBox">
             <div class="profileInside">
                         <div class="profile">

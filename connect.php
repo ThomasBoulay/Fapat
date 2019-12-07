@@ -15,11 +15,9 @@
               href="stylesCss/styleConnect.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
 
         <div id="login" style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
             <form action="logIn.php" method="post" class="login">
