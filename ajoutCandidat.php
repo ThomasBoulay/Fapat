@@ -33,7 +33,6 @@ $req->execute();
     <tr>
         <th>id</th>
         <th>username</th>
-        <th>password</th>
         <th>nom</th>
         <th>prenom</th>
         <th>email</th>
@@ -46,7 +45,6 @@ $req->execute();
         <tr>
             <td><?php echo $row['id']; ?></td>
             <td><?php echo $row['username']; ?></td>
-            <td><?php echo $row['password']; ?></td>
             <td><?php echo $row['nom']; ?></td>
             <td><?php echo $row['prenom']; ?></td>
             <td><?php echo $row['email']; ?></td>

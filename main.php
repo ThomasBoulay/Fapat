@@ -20,6 +20,10 @@ session_start();
         </div>
         <div class ="background">
         <div class="bodyContent">
+            <div class = "textContent">
+                <p>Fighting Aircraft Pilot</p>
+                <p> Aptitude Test</p>
+            </div>
             <?php
             if (isset($_SESSION['logged'])==true){
                 if(isset($_SESSION['gestion'])){

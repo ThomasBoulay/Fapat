@@ -16,6 +16,7 @@ body {
     background-image:url('../images/fighterPilot.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    z-index:-1;
 }
 
 .flexcontainer {
@@ -132,8 +133,26 @@ body {
     display: block;
 }
 
-
 /*Test nouveau menu*/
+
+
+.textContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 78%;
+}
+
+.textContent > p{
+    font-family: Candara;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    padding:0;
+}
+
 
 
 .navBar {
