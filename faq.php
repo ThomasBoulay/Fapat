@@ -7,8 +7,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet"
               href="stylesCss/styleMain.css">
-        <link rel="slylesheet"
+        <link rel="stylesheet"
               href="stylesCss/styleFAQ.css">
+        
     </head>
     
     <header class="flexcontainer">
