@@ -9,13 +9,13 @@
               href="stylesCss/styleMain.css">
         <link rel="stylesheet"
               href="stylesCss/styleFAQ.css">
-        
+
     </head>
-    
-    <header class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>       
+
+    <header>
+        <?php
+        include ('enTete.php');
+        ?>
     </header>
     
     <body style="background-image: url('images/avions.png'); background-size:cover;">
