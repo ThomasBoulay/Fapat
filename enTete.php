@@ -9,7 +9,14 @@
  <div class ="navBar">
      <ul>
          <li><a class ="animated" href ="main.php">Home</a></li>
-         <li><a class ="animated" href ="connect.php">Se connecter</a></li>
+         <?php
+         if(isset($_SESSION['logged'])==false){
+             echo "<li><a class =\"animated\" href =\"connect.php\">Se connecter</a></li>";
+         }
+         else {
+             echo "<li><a class =\"animated\" href =\"profil.php\">Profil</a></li>";
+         }
+         ?>
          <li><a class ="animated" href ="#">Qui sommes-nous ?</a></li>
          <li><a class ="animated" href ="#">FAQ</a></li>
          <li><a class ="animated" href ="documentation.php">Documentation</a></li>
