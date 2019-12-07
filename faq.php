@@ -17,7 +17,7 @@
             ?>       
     </header>
     
-    <body>
+    <body style="background-image: url('images/avions.jpg'); background-size:cover;">
         <h1>Questions fréquentes</h1>
         <div class="contenu">
             
