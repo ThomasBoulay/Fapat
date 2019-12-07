@@ -100,9 +100,6 @@ body {
 }
 
 .dropdown {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20%;
     position: relative;
     display: inline-block;
 }
@@ -156,6 +153,7 @@ body {
 
 
 .navBar {
+
     display:flex;
     margin:0px;
     padding:0px;
@@ -163,13 +161,13 @@ body {
 }
 
 .navBar ul{
-    position: fixed-top;
     list-style-type: none;
-    margin: 0px 0px 0px 130px;
+    margin: 0px 0px 0px 0px;
     padding:0;
 }
 
 .navBar ul li{
+    display: inline;
     float: left;
     line-height: 100%;
 }
@@ -182,7 +180,7 @@ body {
     line-height: 20px;
 
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1vw;
     color:black;
     font-family: Candara;
 }

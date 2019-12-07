@@ -17,7 +17,7 @@ if(isset($_SESSION['gestion'])==false){
               href="stylesCss/styleMain.css">
     </head>
     <body>
-        <div class="flexcontainer">
+        <div class="flexcontainer" style="height: 20%">
             <?php
             include ('enTete.php');
             ?>
