@@ -14,7 +14,7 @@ $email = $_POST['email'];
 
 $username = strtolower(substr($prenom,0,1).$nom);
 
-$password = "azery"//randomPassword();
+$password = "azery";//randomPassword();
 $passwordhashed = password_hash($password, PASSWORD_DEFAULT);
 
 $db = new PDO("mysql:host=localhost;dbname=testlogin", "root", "");
