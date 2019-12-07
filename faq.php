@@ -18,7 +18,7 @@
             ?>       
     </header>
     
-    <body style="background-image: url('images/avions.jpg'); background-size:cover;">
+    <body style="background-image: url('images/avions.png'); background-size:cover;">
         <h1>Questions fréquentes</h1>
         <div class="contenu">
             
@@ -37,7 +37,7 @@
                 <h3>Questions 2:</h3>
                 <div class="reponse">
                     <div class="reponse-inner">
-                        <p>Answer 2</p>
+                        <p>Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.</p>
                     </div>        
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <h3>Questions 3 :</h3>
                 <div class="reponse">
                     <div class="reponse-inner">
-                        <p>Answer 3</p>
+                        <p>Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.</p>
                     </div>        
                 </div>
             </div>

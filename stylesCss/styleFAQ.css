@@ -4,3 +4,44 @@ h1 {
     font-size: 40px;
     margin: 30px;
 }
+
+.contenu{
+    max-width: 60%;
+    margin: auto;
+    width: 100%;
+}
+
+.question{
+    border-bottom: 1px solid;
+}
+
+
+.question h3{
+    font-size: 23px;
+    margin: 0;
+    background-color: rgba(0,0,0,0.3);
+    padding: 15px;
+    cursos: pointer;
+    position: relative;
+}
+
+.question h3:after{
+    content: '\276F';
+    position: absolute;
+    right: 30px;
+    transform: rotate(90deg);
+
+}
+
+.reponse{
+    background-color: rgba(255,255,255,0.1);
+    
+}
+
+.reponse *{
+    margin-top: 0;
+}
+
+.reponse-inner{
+    padding: 15px;
+}
