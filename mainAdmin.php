@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if(isset($_SESSION['gestion'])==false){
+    header('Location: main.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +21,6 @@ session_start();
             <?php
             include ('enTete.php');
             ?>
-            <div class="dropdown">
-                <img src="images/internet.png" width="50" height="50">
-                <div class="dropdown-content" style= "right:0;">
-                    <a href="mainAdmin.php">Français (FR)</a>
-                    <a href="mainAdminEn.php">English (EN)</a>
-                </div>
-            </div>
         </div>
       <div class="corps">  
         <div class="dropdown">

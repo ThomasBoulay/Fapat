@@ -19,12 +19,6 @@ session_start();
             <?php
             include ('enTete.php');
             ?>
-            <div class="dropdown" style="flex-basis: 12%; background-image: url('images/internet.png');">
-                <div class="dropdown-content" style="right: 0">
-                    <a href="nousContacter.php">Français (FR)</a>
-                    <a href="nousContacterEN.php">English (EN)</a>
-                </div>
-            </div>
         </div>
 
         <div style="width: 50%; display: block; margin-left: auto; margin-right: auto;">

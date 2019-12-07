@@ -11,12 +11,12 @@ if (isset($_POST['username'],$_POST['password'])) {
     $rep = $db->query("SELECT username,password,admin FROM users WHERE username = '".$username."'");
     $data = $rep->fetch();
     
-    if($password==$data['password']){
+    if(password_verify($password, $data['password'])){
         $_SESSION['logged']=$username;
         
         if($data['admin']==1){
-            $_SESSION['gestion'];
-            header('Location: gestion.php');
+            $_SESSION['gestion']=1;
+            header('Location: mainAdmin.php');
             exit;
         }
         else{
