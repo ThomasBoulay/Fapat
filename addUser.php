@@ -14,11 +14,11 @@ $email = $_POST['email'];
 
 $username = strtolower(substr($prenom,0,1).$nom);
 
-$password = randomPassword();
-echo $username." ".$password;
+$password = "azery"//randomPassword();
+$passwordhashed = password_hash($password, PASSWORD_DEFAULT);
 
 $db = new PDO("mysql:host=localhost;dbname=testlogin", "root", "");
-$req = $db->query("insert into users (username,password,nom,prenom,email,dateNaissance) values ('".$username."', '".$password."', '".$nom."', '".$prenom."', '".$email."', '".$date."')");
+$req = $db->query("insert into users (username,password,nom,prenom,email,dateNaissance) values ('".$username."', '".$passwordhashed."', '".$nom."', '".$prenom."', '".$email."', '".$date."')");
 
 header('Location: ajoutCandidat.php');
 ?>
