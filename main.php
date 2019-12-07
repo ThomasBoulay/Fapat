@@ -39,8 +39,9 @@ session_start();
             ?>
             <div class="corps">
                 <a>Documentation</a>
-                <a>Statistics</a>
+                <a>Statistiques</a>
             </div>
+        </div>
         </div>
         <?php
         include ('piedPage.php');
