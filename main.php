@@ -20,6 +20,10 @@ session_start();
         </div>
         <div class ="background">
         <div class="bodyContent">
+            <div class = "textContent">
+                <p>Fighting Aircraft Pilot</p>
+                <p> Aptitude Test</p>
+            </div>
             <?php
             if (isset($_SESSION['logged'])==true){
                 if(isset($_SESSION['gestion'])){
@@ -39,8 +43,9 @@ session_start();
             ?>
             <div class="corps">
                 <a>Documentation</a>
-                <a>Statistics</a>
+                <a>Statistiques</a>
             </div>
+        </div>
         </div>
         <?php
         include ('piedPage.php');

@@ -62,7 +62,9 @@ body {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -70,8 +72,8 @@ body {
 
 .corps {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-
+    flex-direction: row;
+    justify-content: center;
+    
 }
 
