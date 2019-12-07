@@ -22,9 +22,14 @@ session_start();
         <div class="bodyContent">
             <?php
             if (isset($_SESSION['logged'])==true){
-                        echo"<div class=\"corps\">
-                <a href=\"profil.php\">Profil</a>
+                if(isset($_SESSION['gestion'])){
+                    echo"<div class=\"corps\">
+                <a href=\"mainAdmin.php\">Gestion</a>
             </div>";
+                }
+                else{echo"<div class=\"corps\">
+                <a href=\"profil.php\">Profil</a>
+            </div>";}
             }
             else{
                 echo"<div class=\"corps\">

@@ -15,7 +15,7 @@ if (isset($_POST['username'],$_POST['password'])) {
         $_SESSION['logged']=$username;
         
         if($data['admin']==1){
-            $_SESSION['gestion'];
+            $_SESSION['gestion']=1;
             header('Location: mainAdmin.php');
             exit;
         }
