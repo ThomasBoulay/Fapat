@@ -1,5 +1,9 @@
 <?php
 session_start();
+
+if(isset($_SESSION['logged'])==false){
+    header('Location: main.php');
+}
 ?>
 
 <!DOCTYPE html>
