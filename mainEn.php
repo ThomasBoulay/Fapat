@@ -6,9 +6,9 @@ session_start();
 <html lang="en-US">
     <head>
         <title>
-        Test FAPAT (En)
+        FAPAT Test (En)
         </title>
-        <meta charset="UTF-8"> 
+        <meta charset="UTF-8">
         <link rel="stylesheet"
               href="stylesCss/styleMain.css">
     </head>
@@ -16,24 +16,35 @@ session_start();
         <?php
         include ('enTete.php');
         ?>
-        
-        <?php
-            if (isset($_SESSION['logged'])==true){
+        <div class ="background" style="background-image:url('images/fighterPilot.jpg');">
+            <div class="bodyContent">
+                <div class = "textContent">
+                    <p>Fighting Aircraft Pilot</p>
+                    <p> Aptitude Test</p>
+                </div>
+                <?php
+                if (isset($_SESSION['logged'])==true){
+                    if(isset($_SESSION['gestion'])){
                         echo"<div class=\"corps\">
-                <a href=\"profilEn.php\">Profil</a>
-            </div>";
-            }
-            else{
-                echo"<div class=\"corps\">
-                <a href=\"connectEn.php\">Log In</a>
-            </div>";
-            }
-        ?>
-        <div class="corps">
-            <a>Documentation</a>
-            <a>Statistics</a>
+                    <a href=\"mainAdmin.php\">Gestion</a>
+                </div>";
+                    }
+                    else{echo"<div class=\"corps\">
+                    <a href=\"profil.php\">Profil</a>
+                </div>";}
+                }
+                else{
+                    echo"<div class=\"corps\">
+                    <a href=\"connect.php\">Log in</a>
+                </div>";
+                }
+                ?>
+                <div class="corps">
+                    <a>Documentation</a>
+                    <a>Statistics</a>
+                </div>
+            </div>
         </div>
-        
         <?php
         include ('piedPageEN.php');
         ?>

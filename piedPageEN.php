@@ -9,13 +9,13 @@
         <img src="images/CapSens.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
     <div style="flex-basis: 21%"></div>
-    <a href="#" class="buttonFoot" style="flex-basis: 20%">
+    <a href="NousContacter.php" class="buttonFoot" style="flex-basis: 20%">
         Contact Us
     </a>
-    <a href="#" class="buttonFoot" style="flex-basis: 20%">
+    <a href="aPropos.php" class="buttonFoot" style="flex-basis: 20%">
         About
     </a>
-    <a href="#" class="buttonFoot" style="flex-basis: 20%">
+    <a href="conditions.php" class="buttonFoot" style="flex-basis: 20%">
         Terms of Use
     </a>
 </div>

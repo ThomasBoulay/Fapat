@@ -1,7 +1,4 @@
 
-body {
-    background-color: darkgray;
-}
 
 h1 {
     text-align: center;
@@ -17,7 +14,8 @@ h1 {
 }
 
 .question{
-    border-bottom: 1px solid;
+    margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 
@@ -39,7 +37,7 @@ h1 {
 }
 
 .reponse{
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(0,0,0,0.1);
     display: none;
     
 }
