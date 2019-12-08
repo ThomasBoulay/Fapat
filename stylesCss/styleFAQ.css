@@ -1,3 +1,8 @@
+
+body {
+    background-color: darkgray;
+}
+
 h1 {
     text-align: center;
     font-family: sans-serif;
@@ -35,13 +40,20 @@ h1 {
 
 .reponse{
     background-color: rgba(255,255,255,0.1);
+    overflow: hidden;
     
 }
 
 .reponse *{
     margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .reponse-inner{
     padding: 15px;
+
+}
+
+.accordion-item:target .reponse{
+    max-height: 20rem;
 }

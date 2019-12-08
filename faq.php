@@ -9,7 +9,7 @@
               href="stylesCss/styleMain.css">
         <link rel="stylesheet"
               href="stylesCss/styleFAQ.css">
-
+       
     </head>
 
     <header>
@@ -18,7 +18,7 @@
         ?>
     </header>
     
-    <body style="background-image: url('images/avions.png'); background-size:cover;">
+    <body >
         <h1>Questions fréquentes</h1>
         <div class="contenu">
             
