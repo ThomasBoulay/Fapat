@@ -40,7 +40,7 @@ h1 {
 
 .reponse{
     background-color: rgba(255,255,255,0.1);
-    overflow: hidden;
+    display: none;
     
 }
 
@@ -54,6 +54,4 @@ h1 {
 
 }
 
-.accordion-item:target .reponse{
-    max-height: 20rem;
-}
+

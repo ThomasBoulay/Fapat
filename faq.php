@@ -9,7 +9,9 @@
               href="stylesCss/styleMain.css">
         <link rel="stylesheet"
               href="stylesCss/styleFAQ.css">
-       
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="deroule.js"></script>
+        
     </head>
 
     <header>
@@ -44,6 +46,15 @@
         <!--question 3:  -->  
             <div class="question">
                 <h3>Questions 3 :</h3>
+                <div class="reponse">
+                    <div class="reponse-inner">
+                        <p>Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.</p>
+                    </div>        
+                </div>
+            </div>
+        <!-- question 4: -->
+            <div class="question">
+                <h3>Questions 4 :</h3>
                 <div class="reponse">
                     <div class="reponse-inner">
                         <p>Nec sane haec sola pernicies orientem diversis cladibus adfligebat. Namque et Isauri, quibus est usitatum saepe pacari saepeque inopinis excursibus cuncta miscere, ex latrociniis occultis et raris, alente inpunitate adulescentem in peius audaciam ad bella gravia proruperunt, diu quidem perduelles spiritus inrequietis motibus erigentes, hac tamen indignitate perciti vehementer, ut iactitabant, quod eorum capiti quidam consortes apud Iconium Pisidiae oppidum in amphitheatrali spectaculo feris praedatricibus obiecti sunt praeter morem.</p>

@@ -1,6 +1,6 @@
-$(function () {
+$(document).ready(function () {
     $('.question h3').click(function () {
-        $('.reponse').hide();
+        $(this).next().slideToggle();
     });
 });
 
