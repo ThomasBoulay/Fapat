@@ -23,7 +23,7 @@
             <form action="logIn.php" method="post" class="loginBox">
               <h1>Connectez-vous</h1>
               <div class="loginWrite">
-                  <input id ="name" type="text" name="name" required>
+                  <input id ="name" type="text" name="username" required>
                   <label for="name" class="label-name">
                       <span class="content-name">Identifiant</span>
                   </label>
