@@ -1,25 +1,45 @@
-.background{
-  height:70%;
-  width:100%;
+.backgroundAll{
+  display: flex;
+  height: 80%;
+  width: 100%;
+  justify-content: center;
+}
+.backgroundLeft{
+  background-image: url('../images/LoginAircraft.jpg');
+  position: relative;
+  background-position: 80% 100%;
+  background-repeat: no-repeat;
+  background-size: 1298px 785px;
+  display: flex;
+  height:100%;
+  width:53%;
+  z-index: -1;
+  box-shadow: inset -48px 0px 22px -35px black;
+}
+
+.backgroundRight{
+  height:100%;
+  width:47%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: sans-serif;
+  font-family: Century Gothic;
+  background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
+
 }
 
 
 .loginBox{
     background-color: white;
     display: flex;
-    height: 80%;
-    width: 30%;
+    height: 65%;
+    width: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    border-style: solid;
-    border-width: 2px;
+    border:none;
+    box-shadow: -16px 1px 33px 3px rgba(0,0,0,0.75);
 }
 .loginBox h1{
   position: relative;
@@ -28,22 +48,24 @@
 }
 
 .loginWrite{
+  background-color: inherit;
   display: flex;
   flex-direction: row;
   justify-content: center;
   position: relative;
   bottom: 10px;
   font-size: 15px;
-  width: 50%;
+  width: 60%;
   position: relative;
   height: 50px;
   margin: 10px 0px;
 }
 
 .loginWrite input{
+  background-color: inherit;
   width: 95%;
   height: 100%;
-  color: black;
+  color: #adadad;
   padding-top: 20px;
   border:none;
   outline:none;
@@ -57,11 +79,11 @@
   height: 100%;
   width: 100%;
   pointer-events: none;
-  border-bottom: 1px solid #adadad;
+  border-bottom: 1px solid black;
 }
 
 .content-name{
-  color:#adadad;
+  color: #adadad;
   position: absolute;
   bottom: 6px;
   left: 3px;
@@ -94,17 +116,18 @@
 
 .logButton{
   position: relative;
-  width: 40%;
+  width: 45%;
   height: 50px;
-  bottom: -50px;
-  border-radius: 10px;
+  bottom: -30px;
   border:none;
-  background-image: linear-gradient(120deg,#8A2387,#E94057,#F27121);
+  background-image: linear-gradient(120deg,#636FA4,#E8CBC0);
   background-size: 200%;
   color:white;
   outline:none;
   cursor: pointer;
   transition: .5s;
+  font-family: Century Gothic;
+  font-weight: bold;
 }
 
 .logButton:hover{

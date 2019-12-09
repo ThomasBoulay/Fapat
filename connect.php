@@ -18,10 +18,15 @@
         <?php
         include ('enTete.php');
         ?>
-        <div class="background">
+        <div class="backgroundAll">
+
+        <div class="backgroundLeft">
+
+        </div>
+        <div class="backgroundRight">
 
             <form action="logIn.php" method="post" class="loginBox">
-              <h1>Connectez-vous</h1>
+              <h1>Se Connecter</h1>
               <div class="loginWrite">
                   <input id ="name" type="text" name="username" required>
                   <label for="name" class="label-name">
@@ -44,6 +49,7 @@
                     }
                     ?>
             </form>
+        </div>
         </div>
         <?php
         include ('piedPage.php');
