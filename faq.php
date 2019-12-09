@@ -29,7 +29,7 @@
                 <h3>Combien de fois je peux passer le test ? </h3>
                 <div class="reponse">
                     <div class="reponse-inner">
-                        <p>Vous avez la possibilité de passer le test une fois par candidature. <br/> Cependant vous avez la possibilité de candidater au post de pilote de chasse à deux reprises. <br/> C'est pourquoi nous publions les pourcentages d'admissibilité au métier de pilote de chasse dans la rubrique "statistics". Si vous avez échoué une première fois le test FAPAT, nous vous conseillons vivement de consulter cette page avant de postuler une seconde fois. Ainsi vous aurait une idée plus précise de vous chance de réussite lors de votre deuxième test.</p>
+                        <p>Vous avez la possibilité de passer le test une fois par candidature. <br/> Cependant vous avez la possibilité de candidater au post de pilote de chasse à deux reprises. <br/> C'est pourquoi nous publions les pourcentages d'admissibilité au métier de pilote de chasse dans la rubrique "statistics". Si vous avez échoué une première fois le test FAPAT, nous vous conseillons vivement de consulter cette page avant de postuler une seconde fois. Ainsi vous aurez une idée plus précise de vos chance de réussite lors de votre deuxième test.</p>
                     </div>        
                 </div>
             </div>
