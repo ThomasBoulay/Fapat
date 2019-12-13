@@ -30,7 +30,7 @@ h1 {
     margin: 0;
 
     padding: 15px;
-    cursos: pointer;
+    cursor: pointer;
     position: relative;
 }
 
