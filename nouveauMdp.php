@@ -1,7 +1,5 @@
 <?php
 session_start();
-
-echo 'test';
 $oldPassword = $_POST['oldPassword'];
 $newPassword = $_POST['newPassword'];
 $newPassword2 = $_POST['newPassword2'];
@@ -14,18 +12,18 @@ if($newPassword == $newPassword2){
     if (password_verify($oldPassword,$data['password'])){
         $newPasswordHashed = password_hash($newPassword, PASSWORD_DEFAULT);
         $rep2 = $db->query("UPDATE users SET password = '".$newPasswordHashed."' WHERE users.username = '".$_SESSION['logged']."'");
-        header('Location : profil.php');
+        header('Location: profil.php');
         exit;
     }
     else{
         $_SESSION['failed'] = 1;
-        header('Location : profil.php');
+        header('Location: profil.php');
         exit;
     }
 }
 else{
     $_SESSION['failed'] = 2;
-    header('Location : profil.php');
+    header('Location: profil.php');
     exit;
 }
 ?>
