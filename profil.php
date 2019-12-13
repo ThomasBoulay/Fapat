@@ -27,9 +27,9 @@ if(isset($_SESSION['logged'])==false){
             <div class="backgroundProfil">
                 <div class="profilBox" style="padding: 10px">
                     <div style="height: 90%">
-                        <img src="images/defaultuser.png" style="max-width: 100%; max-height: 100%"">
+                        <img src="images/defaultuser.png" style="max-width: 100%; max-height: 100%">
                     </div>
-                    <div class="profilText" style="height: 90%; flex-basis: 80%; padding: 3%">
+                    <div class="profilText" style="height: 90%; flex-basis: 80%; padding: 3%>
                         <h1>Profil</h1>
                         <?php
                         echo '<p><b>Nom : </b>'.$_SESSION['nom'].'</p>';
@@ -74,7 +74,7 @@ if(isset($_SESSION['logged'])==false){
                     </div>
                 </div>
             </div>
-        </div>
+          </div>
 
         <?php
         include ('piedPage.php');
