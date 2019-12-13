@@ -1,5 +1,5 @@
 body {
-    
+    height:100%;
     background-image: url('../images/avions.jpg');
 }
 
@@ -28,7 +28,7 @@ h1 {
 .question h3{
     font-size: 23px;
     margin: 0;
-    
+
     padding: 15px;
     cursos: pointer;
     position: relative;
@@ -45,7 +45,7 @@ h1 {
 .reponse{
     background-color: rgba(0,0,0,0.1);
     display: none;
-    
+
 }
 
 .reponse *{
@@ -57,5 +57,3 @@ h1 {
     padding: 15px;
 
 }
-
-
