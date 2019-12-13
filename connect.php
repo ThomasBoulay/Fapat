@@ -24,31 +24,31 @@
 
         </div>
         <div class="backgroundRight">
+            <div class="loginBox">
+            <form action="logIn.php" method="post" >
+                <h1>Se Connecter</h1>
+                <div class="loginWrite">
+                    <input id ="name" type="text" name="username" required>
+                    <label for="name" class="label-name">
+                        <span class="content-name">Identifiant</span>
+                    </label>
+                </div>
 
-            <form action="logIn.php" method="post" class="loginBox">
-              <h1>Se Connecter</h1>
-              <div class="loginWrite">
-                  <input id ="name" type="text" name="username" required>
-                  <label for="name" class="label-name">
-                      <span class="content-name">Identifiant</span>
-                  </label>
-              </div>
-
-              <div class="loginWrite">
-                  <input id = password type="password" name="password" required>
-                  <label for="password" class="label-name">
-                      <span class="content-name">Mot de Passe</span>
-                  </label>
-              </div>
-
-              <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
-                    <?php
-                    if (isset($_SESSION['failed']) && $_SESSION['failed']==1){
-                    echo("<label><b>Veuillez réessayer</b></label>");
-                    $_SESSION['failed']=0;
-                    }
-                    ?>
+                <div class="loginWrite">
+                    <input id = password type="password" name="password" required>
+                    <label for="password" class="label-name">
+                        <span class="content-name">Mot de Passe</span>
+                    </label>
+                </div>
+                <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
+                <?php
+                if (isset($_SESSION['failed']) && $_SESSION['failed']==1)
+                {echo("<label><b>Veuillez réessayer</b></label>");
+                $_SESSION['failed']=0;
+                }
+                ?>
             </form>
+            </div>
         </div>
         </div>
         <?php

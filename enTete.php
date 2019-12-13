@@ -1,4 +1,4 @@
-<div class="flexcontainer">
+<div class="entete">
     <div style="flex-basis: 8%">
     <a href="main.php">
         <img src="images/LogoProduit.png" style="height: 100%; width: 100%; object-fit: contain; cursor: pointer; left: 0;">
@@ -23,6 +23,11 @@
              <li><a class ="animated" href ="faq.php">FAQ</a></li>
              <li><a class ="animated" href ="documentation.php">Documentation</a></li>
              <li><a class ="animated" href ="#">Aide</a></li>
+             <?php
+             if(isset($_SESSION['logged'])==true){
+                 echo "<li><a class =\"animated\" href =\"logOut.php\">Déconnexion</a></li>";
+             }
+             ?>
          </ul>
     </div>
     <div class="dropdown" style="flex-basis: 8%">

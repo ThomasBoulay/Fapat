@@ -9,21 +9,24 @@ body {
 
 .background{
     display:block;
-    height:90%;
+    height:100%;
     width: 100%;
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     z-index:-1;
 }
 
 .flexcontainer {
     display: flex;
-    height: 100px;
-    padding:10px ;
 }
 
-.flexcontainer > div {
+.entete{
+    display: flex;
+}
+
+.entete > div {
     background-color: white; opacity: 0.8;
     padding: 10px;
     margin: 0px;
@@ -62,7 +65,6 @@ body {
     border-color: orange;
     border-radius: 10px;
     width: 200px;
-    
 }
 
 .corps > a:hover {
@@ -147,14 +149,10 @@ body {
     padding:0;
 }
 
-
-
 .navBar {
-
     display:flex;
     margin:0px;
     padding:0px;
-   
 }
 
 .navBar ul{

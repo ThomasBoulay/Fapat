@@ -23,50 +23,59 @@ if(isset($_SESSION['logged'])==false){
         include ('enTete.php');
         ?>
 
-        <div class="profileBox">
-            <div class="profileInside">
-                        <div class="profile">
-                            <p>Profil</p>
-                        </div>
-
-                        <div class="profileText">
-                            <div class = "flexPicture">
-                                <img class ="profilePicture" src="images/Airplane.png"
-                                    alt=""
-                                    height="50px" 
-                                    width="40px" />        
+        <div class="backgroundAll">
+            <div class="backgroundProfil">
+                <div class="profilBox" style="padding: 10px">
+                    <div style="height: 90%">
+                        <img src="images/defaultuser.png" style="max-width: 100%; max-height: 100%"">
+                    </div>
+                    <div class="profilText" style="height: 90%; flex-basis: 80%; padding: 3%">
+                        <h1>Profil</h1>
+                        <?php
+                        echo '<p><b>Nom : </b>'.$_SESSION['nom'].'</p>';
+                        echo '<p><b>Prénom : </b>'.$_SESSION['prenom'].'</p>';
+                        echo '<p><b>E-mail : </b>'.$_SESSION['email'].'</p>';
+                        echo '<p><b>Date de Naissance : </b>'.$_SESSION['dateNaissance'].'</p>';
+                        echo '<br>';
+                        echo '<p><b>Pseudonyme : </b>'.$_SESSION['logged'].'</p>';
+                        ?>
+                        <p><b>Changer de Mot de Passe :</b></p>
+                        <form action="nouveauMdp.php" method="post">
+                            <div class="mdpInput">
+                                <input id="oldPassword" type="password" name="oldPassword" required>
+                                <label for="oldPassword" class="mdpLabel">
+                                    <span class="content-name"> Ancien Mot de Passe</span>
+                                </label>
                             </div>
-                        
+                            <div class="mdpInput">
+                                <input id="newPassword" type="password" name="newPassword" required>
+                                <label for="newPassword" class="mdpLabel">
+                                    <span class="content-name">Nouveau Mot de Passe</span>
+                                </label>
+                            </div>
+                            <div class="mdpInput">
+                                <input id="newPassword2" type="password" name="newPassword2" required>
+                                <label for="newPassword2" class="mdpLabel">
+                                    <span class="content-name">Confirmer</span>
+                                </label>
+                            </div>
+                            <button name="submit" type="submit" class="mdpButton">Changer</button>
                             <?php
-                            echo "Nom : <br>";
-                            echo "Prénom : <br>";
-                            echo "Pseudo : ".$_SESSION['logged']."<br>";
-                            echo "ID : <br>";
-                            echo "Changer de mot de passe <br> <br>";
+                            if (isset($_SESSION['failed']) && $_SESSION['failed']==1) {
+                                echo("<label><b>Veuillez réessayer</b></label>");
+                                $_SESSION['failed']=0;
+                            }
+                            elseif (isset($_SESSION['failed']) && $_SESSION['failed']==2){
+                                echo("<label><b>Les mots de passe ne sont pas les mêmes!</b></label>");
+                                $_SESSION['failed']=0;
+                            }
                             ?>
-
-                            <label for="pswd">
-                                <b>Entrez votre de passe actuel</b>
-                            </label>
-                            <input type="password" placeholder="Mot de passe" name="pswd" required>
-                            <br> <br>
-                            <label for="pswd">
-                                <b>Nouveau mot de passe</b>
-                            </label>
-                            <input type="password" placeholder="" name="pswd" required>
-                            <br> <br>
-                            <label for="pswd">
-                                <b>Confirmer le nouveau mot de passe</b>
-                            </label>
-                            <input type="password" placeholder="" name="pswd" required>
-                            <br> <br>
-                            <input class="buttonStat" type="button" value="Voir mes statistiques">
-                        </div>
-                <?php
-                echo"<a href=\"logOut.php\">Log out</a>";
-                ?>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
+
         <?php
         include ('piedPage.php');
         ?>

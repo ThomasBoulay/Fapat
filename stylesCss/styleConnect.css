@@ -1,9 +1,10 @@
-.backgroundAll{
+.backgroundAll {
   display: flex;
   height: 80%;
   width: 100%;
   justify-content: center;
 }
+
 .backgroundLeft{
   background-image: url('../images/LoginAircraft.jpg');
   position: relative;
@@ -26,9 +27,7 @@
   align-items: center;
   font-family: Century Gothic;
   background-image: linear-gradient(to bottom,#636FA4,#E8CBC0);
-
 }
-
 
 .loginBox{
     background-color: white;
