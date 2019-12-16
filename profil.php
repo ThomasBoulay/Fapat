@@ -29,7 +29,7 @@ if(isset($_SESSION['logged'])==false){
                     <div style="height: 90%">
                         <img src="images/defaultuser.png" style="max-width: 100%; max-height: 100%">
                     </div>
-                    <div class="profilText" style="height: 90%; flex-basis: 80%; padding: 3%>
+                    <div class="profilText" style="height: 90%; flex-basis: 80%; padding: 3%">
                         <h1>Profil</h1>
                         <?php
                         echo '<p><b>Nom : </b>'.$_SESSION['nom'].'</p>';
@@ -44,7 +44,7 @@ if(isset($_SESSION['logged'])==false){
                             <div class="mdpInput">
                                 <input id="oldPassword" type="password" name="oldPassword" required>
                                 <label for="oldPassword" class="mdpLabel">
-                                    <span class="content-name"> Ancien Mot de Passe</span>
+                                    <span class="content-name">Mot de Passe actuel</span>
                                 </label>
                             </div>
                             <div class="mdpInput">
@@ -62,11 +62,11 @@ if(isset($_SESSION['logged'])==false){
                             <button name="submit" type="submit" class="mdpButton">Changer</button>
                             <?php
                             if (isset($_SESSION['failed']) && $_SESSION['failed']==1) {
-                                echo("<label><b>Veuillez réessayer</b></label>");
+                                echo("<label><b>Le mot de passe actuel est incorrect!</b></label>");
                                 $_SESSION['failed']=0;
                             }
                             elseif (isset($_SESSION['failed']) && $_SESSION['failed']==2){
-                                echo("<label><b>Les mots de passe ne sont pas les mêmes!</b></label>");
+                                echo("<label><b>Les nouveaux mots de passe ne sont pas les mêmes!</b></label>");
                                 $_SESSION['failed']=0;
                             }
                             ?>

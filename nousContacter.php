@@ -6,7 +6,7 @@ session_start();
 <html lang="en-US">
     <head>
         <title>
-        Conect (Fr)
+        Contact (Fr)
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"

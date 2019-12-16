@@ -1,11 +1,14 @@
 <?php
-    $to = 'oscarmcauliffe99@gmail.com';
-    $email_from = $_POST['email'];
-    $headers = "From: $email_from \r\n";
+    $to = 'capsens2019@gmail.com';
+    $comingfrom = 'oscarmcauliffe99@gmail.com';
+    $headers = "From : ".$comingfrom."\r\n";
     $subject = $_POST['subject'];
     $name = $_POST['name'];
     $message = $_POST['message'];
-    $text = "$name \n $message";
+    $message = "$name \n $message";
 
-    mail($to,$subject,$text,$headers);
+    if(mail($to, $subject, $message, $headers))
+        echo "WOOHOO, email sent";
+    else
+        echo "BUMMER, email failed";
 ?>
