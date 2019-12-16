@@ -4,7 +4,7 @@ $_SESSION['failed']=0;
 
 
 if (isset($_POST['username'],$_POST['password'])) {
-    $db = new PDO("mysql:host=localhost;dbname=testlogin", "root", "");
+    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
 
     $username = $_POST['username'];
     $password = $_POST['password'];
