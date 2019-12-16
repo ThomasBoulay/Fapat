@@ -32,7 +32,6 @@ session_start();
         </div>
         <div class="image">
             <img src="images/pilote.jpg" width="45%" height="240%">
-            </a>
         </div>
         <div class="texte">
            <?php echo 'Seulement 2,5 à 3% des candidats possèdent un profil psychologique suffisamment équilibré pour résister au stress.<br/>'; echo 'Il est donc primordiale de concevoir une machine pouvant fournir un diagnostique sur les candidats.<br/>';echo 'Durant leurs tests, lorsqu’ils sont en situation de stress, ils doivent par exemple :<br/>';echo '-Répondre à des calculs mentaux<br/>';
