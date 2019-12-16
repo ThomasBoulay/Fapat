@@ -34,11 +34,10 @@ session_start();
                 <a href="https://www.defense.gouv.fr/marine" title="Aller vers le site de l'armée de mer" target="_blank">Armée de mer</a>
             </div>
         </div>
-       <!-- <div class="image">
-            <img src="images/pilote.jpg" width="45%" height="240%">
-        
+      
+
         <div class="texte">
-<<<<<<< HEAD
+
            <p>Seulement 2,5 à 3% des candidats possèdent un profil psychologique suffisamment équilibré pour résister au stress.<br/>
                Il est donc primordiale de concevoir une machine pouvant fournir un diagnostique sur les candidats.<br/>
                Durant leurs tests, lorsqu’ils sont en situation de stress, ils doivent par exemple: <br/>
@@ -51,7 +50,7 @@ session_start();
                -Les standards de perception des couleurs « aviation »<br/>
                -Les standards d audition « aviation » 
             </p>
-            </div> -->
+            </div> 
          <div class="contenu">
          
             <div class="section">
