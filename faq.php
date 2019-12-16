@@ -29,7 +29,7 @@ session_start();
         <div class="contenu">
             
         <!-- à rép pour chaque question-->
-            <div class="question">
+            <div class="section">
                 <h3>Combien de fois je peux passer le test ? </h3>
                 <div class="reponse">
                     <div class="reponse-inner">
@@ -39,7 +39,7 @@ session_start();
             </div>
         <!-- fin question-->
         <!-- question 2:  -->
-            <div class="question">
+            <div class="section">
                 <h3>Questions 2:</h3>
                 <div class="reponse">
                     <div class="reponse-inner">
@@ -48,7 +48,7 @@ session_start();
                 </div>
             </div>
         <!--question 3:  -->  
-            <div class="question">
+            <div class="section">
                 <h3>Questions 3 :</h3>
                 <div class="reponse">
                     <div class="reponse-inner">
@@ -57,7 +57,7 @@ session_start();
                 </div>
             </div>
         <!-- question 4: -->
-            <div class="question">
+            <div class="section">
                 <h3>Questions 4 :</h3>
                 <div class="reponse">
                     <div class="reponse-inner">
@@ -76,3 +76,4 @@ session_start();
         include('piedPage.php');
         ?> 
     </footer>
+</html>

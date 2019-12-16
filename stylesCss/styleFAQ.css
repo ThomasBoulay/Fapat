@@ -18,14 +18,14 @@ h1 {
     width: 100%;
 }
 
-.question{
+.section{
     margin-bottom: 15px;
     border-radius: 15px;
     background-color: #E8CBC0;
 }
 
 
-.question h3{
+.section h3{
     font-size: 23px;
     margin: 0;
     padding: 15px;
@@ -33,7 +33,7 @@ h1 {
     position: relative;
 }
 
-.question h3:after{
+.section h3:after{
     content: '\276F';
     position: absolute;
     right: 30px;
@@ -56,3 +56,4 @@ h1 {
     padding: 15px;
 
 }
+ 
