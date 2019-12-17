@@ -5,7 +5,7 @@ $newPassword = $_POST['newPassword'];
 $newPassword2 = $_POST['newPassword2'];
 
 if($newPassword == $newPassword2){
-    $db = new PDO("mysql:host=localhost;dbname=testlogin", "root", "");
+    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
     $rep = $db->query("SELECT username,password,admin,nom,prenom,email,dateNaissance FROM users WHERE username = '".$_SESSION['logged']."'");
     $data = $rep->fetch();
 

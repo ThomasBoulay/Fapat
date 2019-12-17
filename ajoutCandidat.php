@@ -20,7 +20,7 @@ session_start();
     ?>
 
     <?php
-    $db = new PDO("mysql:host=localhost;dbname=testlogin", "root", "");
+    $db = new PDO("mysql:host=localhost;dbname=fapat", "root", "");
     $req = $db->query("select * from users");
     $req->execute();
     ?>

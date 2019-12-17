@@ -107,15 +107,4 @@ session_start();
     
 </html>
 
-=======
-           <?php echo 'Seulement 2,5 à 3% des candidats possèdent un profil psychologique suffisamment équilibré pour résister au stress.<br/>'; echo 'Il est donc primordiale de concevoir une machine pouvant fournir un diagnostique sur les candidats.<br/>';echo 'Durant leurs tests, lorsqu’ils sont en situation de stress, ils doivent par exemple :<br/>';echo '-Répondre à des calculs mentaux<br/>';
-           echo '-Maintenir un cap (appuyer sur une pédale avec un effort constant) quoi qu’il arrive (bruits ou sons imprévus)<br/>';echo '-Pendant toute la durée de stress, la fréquence cardiaque est évaluée<br/>';echo 'Il faut obtenir 1 sur les standards suivants :<br/>';echo'-Les standards d aptitude générale « aviation »<br/>';echo'-Les standards d acuité visuelle « aviation »<br/>';echo'-Les standards de perception des couleurs « aviation »<br/>';echo'-Les standards d audition « aviation »<br/>';  ?>
-        </div>
 
-        <?php
-        include ('piedPage.php');
-        ?>
-
-    </body>
-<html>
->>>>>>> ab4127f94879ed92fb16700c241d56a25f3ce0a2

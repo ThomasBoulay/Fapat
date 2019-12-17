@@ -6,7 +6,7 @@ session_start();
 <html lang="en-US">
     <head>
         <title>
-        Conect (Fr)
+        Contact (Fr)
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
@@ -46,6 +46,18 @@ session_start();
                         Envoyer
                     </button>
                 </div>
+                <?php
+                if (isset($_SESSION['mail'])){
+                    if ($_SESSION['mail']=='failed'){
+                        echo("<label><b>Email non envoyé.</b></label>");
+                        unset($_SESSION["mail"]);
+                    }
+                    elseif ($_SESSION['mail']=='success'){
+                        echo("<label><b>Email envoyé.</b></label>");
+                        unset($_SESSION["mail"]);
+                    }
+                }
+                ?>
             </form>
         </div>
 

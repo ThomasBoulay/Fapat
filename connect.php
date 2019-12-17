@@ -43,7 +43,7 @@
                 <button name="submit" type="submit" class="logButton" value ="Se Connecter">Se connecter</button>
                 <?php
                 if (isset($_SESSION['failed']) && $_SESSION['failed']==1)
-                {echo("<label><b>Veuillez réessayer</b></label>");
+                {echo("<label><b>Identifiants incorrects.</b></label>");
                 $_SESSION['failed']=0;
                 }
                 ?>

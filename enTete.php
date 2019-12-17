@@ -1,10 +1,10 @@
 <div class="entete">
-    <div style="flex-basis: 8%">
+    <div class="logoFapat">
     <a href="main.php">
         <img src="images/LogoProduit.png" style="height: 100%; width: 100%; object-fit: contain; cursor: pointer; left: 0;">
     </a>
     </div>
-    <div style="flex-basis: 30%">
+    <div class="fapatText">
         <img src="images/FAPAT.png" style="height: 100%; width: 100%; object-fit: contain">
     </div>
     <div class ="navBar" style="flex-basis: 50%; overflow-y:auto;
@@ -30,7 +30,7 @@
              ?>
          </ul>
     </div>
-    <div class="dropdown" style="flex-basis: 8%">
+    <div class="dropdown">
         <img src="images/internet.png" style="height: 100%; width: 25%; object-fit: contain">
             <div class="dropdown-content" style="right: 0">
                  <?php

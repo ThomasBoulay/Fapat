@@ -1,11 +1,16 @@
 <?php
-    $to = 'oscarmcauliffe99@gmail.com';
-    $email_from = $_POST['email'];
-    $headers = "From: $email_from \r\n";
+    session_start();
+
+    $to = 'capsens2019@gmail.com';
     $subject = $_POST['subject'];
     $name = $_POST['name'];
     $message = $_POST['message'];
-    $text = "$name \n $message";
+    $message = $_POST['email']."$name \n $message";
 
-    mail($to,$subject,$text,$headers);
+    if(mail($to, $subject, $message))
+        $_SESSION['mail'] = 'success';
+    else
+        $_SESSION['mail'] = 'failed';
+    header('Location: nousContacter.php');
+    exit;
 ?>
