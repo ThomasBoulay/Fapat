@@ -37,38 +37,84 @@ body {
 
 /* le contenus du bas n'a rien a voir avec l'en-tete */
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.bloc{
+    position: relative;
+    height: 80%;
+    width: 90%;
+    margin-left: 5%;   
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+/* test flip card */
+
+.cardLeft{
+    position: absolute;
+    height: 100%;
+    width: 33%;
+    margin-left: 0%;
+    /*border-style: solid;*/
+}
+.back{
+    transform: perspective(600px) rotateY(180deg);
+}
+.front img{
+    height: 25%;
+    width: 30%;
+    margin: 50%;
+     transform: translate(-50%, -50%);
+}
+.back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+}
+.cardLeft:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.cardLeft:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.cardMiddle{
+    position: absolute;
+    height: 100%;
+    width: 33%;
+    margin-left:33.5%;
+    /*border-style: solid;*/
+}
+.cardMiddle:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.cardMiddle:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
 }
 
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
+.cardRight{
+    position: absolute;
+    height: 100%;
+    width: 33%;
+    margin-left: 67%;
+    /*border-style: solid;*/
+}
+.cardRight:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.cardRight:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.front,.back{
+    width: 100%;
+    
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
 }
 
-.corps {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;    
+.front{
+    transform: perspective(600px) rotateY(0deg);
 }
 
+h4{
+    margin-top: 60%;
+}

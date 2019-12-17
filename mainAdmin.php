@@ -14,37 +14,58 @@ if (isset($_SESSION['gestion']) == false) {
     </title>
     <meta charset="UTF-8">
     <link rel="stylesheet"
-          href="stylesCss/styleMain.css">
+          href="stylesCss/StyleMain.css">
+    <link rel="stylesheet"
+          href="stylesCss/StyleMainAdmin.css">
 </head>
 <body>
     <?php
     include ('enTete.php');
     ?>
-    <div>
-        <div class="dropdown">
-            <img src="images/logoTest.png" width="50" height="50">
-            <div class="dropdown-content">
-                <a href="#">Modifier</a>
-                <a href="#">Consulter</a>
+    <div class="bloc">
+        
+        
+        <div class="cardLeft">
+            <div class="front"> 
+                <img src="images/logoTest.png" alt="">
+            </div>
+            <div class="back">
+               <div class="back-content middle">
+                <h4><a href="#">1ere option</a></h4>           
+                <p><a href="#">2eme option</a></p> 
+                </div>  
             </div>
         </div>
-
-        <div class="dropdown">
-            <img src="images/logoInfo.png" width="50" height="50">
-            <div class="dropdown-content">
-                <a href="#">Documentation</a>
-                <a href="#">Statistiques</a>
+        
+        
+        <div class="cardMiddle">
+            <div class="front"> 
+                <img src="images/logoInfo.png" alt="">
+            </div>
+            <div class="back">
+               <div class="back-content middle">
+                <h4><a href="#">1ere option</a></h4>           
+                <p><a href="#">2eme option</a></p>
+                </div>  
             </div>
         </div>
-
-        <div class="dropdown">
-            <img src="images/logoProfil.png" width="50" height="50">
-            <div class="dropdown-content">
-                <a href="ajoutCandidat.php">Ajouter un utilisateur</a>
-                <a href="#">Modifier un profil</a>
+        
+        
+        <div class="cardRight">
+            <div class="front"> 
+                <img src="images/logoProfil.png" alt="">
             </div>
-        </div>
+            <div class="back">
+               <div class="back-content middle">
+                <h4><a href="#">1ere option</a></h4>           
+                <p><a href="#">2eme option</a></p>
+                </div>  
+            </div>
+        </div>   
+        
+        
     </div>
+
     <?php
     include('piedPage.php');
     ?>
