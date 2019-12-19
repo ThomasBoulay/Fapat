@@ -6,7 +6,7 @@ session_start();
 <html lang="en-US">
     <head>
         <title>
-        Conect (Fr)
+        Contact (Fr)
         </title>
         <meta charset="UTF-8">
         <link rel="stylesheet"
@@ -15,17 +15,9 @@ session_start();
               href="stylesCss/styleContact.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-            <div class="dropdown" style="flex-basis: 12%; background-image: url('images/internet.png');">
-                <div class="dropdown-content" style="right: 0">
-                    <a href="nousContacter.php">Français (FR)</a>
-                    <a href="nousContacterEN.php">English (EN)</a>
-                </div>
-            </div>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
 
         <div style="width: 50%; display: block; margin-left: auto; margin-right: auto;">
             <form action="form-to-email.php" method="post" class="contact">
@@ -54,6 +46,18 @@ session_start();
                         Envoyer
                     </button>
                 </div>
+                <?php
+                if (isset($_SESSION['mail'])){
+                    if ($_SESSION['mail']=='failed'){
+                        echo("<label><b>Email non envoyé.</b></label>");
+                        unset($_SESSION["mail"]);
+                    }
+                    elseif ($_SESSION['mail']=='success'){
+                        echo("<label><b>Email envoyé.</b></label>");
+                        unset($_SESSION["mail"]);
+                    }
+                }
+                ?>
             </form>
         </div>
 

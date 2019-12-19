@@ -13,34 +13,36 @@ session_start();
               href="stylesCss/styleMain.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-            <div class="dropdown" style="flex-basis: 12%; background-image: url('images/internet.png');">
-                <div class="dropdown-content" style="right: 0">
-                    <a href="main.php">Français (FR)</a>
-                    <a href="mainEn.php">English (EN)</a>
+        <?php
+        include ('enTete.php');
+        ?>
+        <div class ="background" style="background-image:url('images/fighterPilot.jpg');">
+            <div class="bodyContent">
+                <div class = "textContent">
+                    <p>Fighting Aircraft Pilot</p>
+                    <p> Aptitude Test</p>
                 </div>
-            </div>
-        </div>
-
-        <div>
-            <?php
-            if (isset($_SESSION['logged'])==true){
+                <?php
+                if (isset($_SESSION['logged'])==true){
+                    if(isset($_SESSION['gestion'])){
                         echo"<div class=\"corps\">
-                <a href=\"profil.php\">Profil</a>
-            </div>";
-            }
-            else{
-                echo"<div class=\"corps\">
-                <a href=\"connect.php\">Se Connecter</a>
-            </div>";
-            }
-            ?>
-            <div class="corps">
-                <a href="documentation.php">Documentation</a>
-                <a>Statistiques</a>
+                    <a href=\"mainAdmin.php\">Gestion</a>
+                </div>";
+                    }
+                    else{echo"<div class=\"corps\">
+                    <a href=\"profil.php\">Profil</a>
+                </div>";}
+                }
+                else{
+                    echo"<div class=\"corps\">
+                    <a href=\"connect.php\">Se connecter</a>
+                </div>";
+                }
+                ?>
+                <div class="corps">
+                    <a>Documentation</a>
+                    <a>Statistiques</a>
+                </div>
             </div>
         </div>
         <?php

@@ -7,17 +7,3 @@
     font-family: Arial;
     text-align: justify;
 }
-
-.texte {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.image {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.doc {
-    flex-basis: 8%;
-}

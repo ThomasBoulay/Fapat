@@ -15,17 +15,9 @@ session_start();
               href="stylesCss/styleAPropos.css">
     </head>
     <body>
-        <div class="flexcontainer">
-            <?php
-            include ('enTete.php');
-            ?>
-            <div class="dropdown" style="flex-basis: 12%; background-image: url('images/internet.png');">
-                <div class="dropdown-content" style="right: 0">
-                    <a href="aPropos.php">Français (FR)</a>
-                    <a href="aProposEN.php">English (EN)</a>
-                </div>
-            </div>
-        </div>
+        <?php
+        include ('enTete.php');
+        ?>
 
         <div class="texte" style="width: 75%; display: block; margin-left: auto; margin-right: auto;">
             <h2>A Propos</h2>
