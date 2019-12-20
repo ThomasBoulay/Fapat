@@ -22,50 +22,43 @@ if (isset($_SESSION['gestion']) == false) {
     <?php
     include ('enTete.php');
     ?>
-    <div class="bloc">
-        
-        
-        <div class="cardLeft">
-            <div class="front"> 
-                <img src="images/logoTest.png" alt="">
-            </div>
-            <div class="back">
-               <div class="back-content middle">
-                <h4><a href="#">1ere option</a></h4>           
-                <p><a href="#">2eme option</a></p> 
-                </div>  
-            </div>
-        </div>
-        
-        
-        <div class="cardMiddle">
-            <div class="front"> 
-                <img src="images/logoInfo.png" alt="">
-            </div>
-            <div class="back">
-               <div class="back-content middle">
-                <h4><a href="#">1ere option</a></h4>           
-                <p><a href="#">2eme option</a></p>
-                </div>  
-            </div>
-        </div>
-        
-        
-        <div class="cardRight">
-            <div class="front"> 
-                <img src="images/logoProfil.png" alt="">
-            </div>
-            <div class="back">
-               <div class="back-content middle">
-                <h4><a href="#">1ere option</a></h4>           
-                <p><a href="#">2eme option</a></p>
-                </div>  
-            </div>
-        </div>   
-        
-        
-    </div>
 
+        <div class="container">
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/test2.jpg">
+                <div class="details">
+                    <div class="content">
+                        <h2>What is Za Warudo ?</h2>
+                        <p>The stand Za Warudo, the world. ZA WARUUUUDO TOKY WA TOMARUUU</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/documentation1.jpg">
+                <div class="details">
+                    <div class="content">
+                        <h2>What is Za Warudo ?</h2>
+                        <p>The stand Za Warudo, the world. ZA WARUUUUDO TOKY WA TOMARUUU</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <img src="images/Candidats1.jpg">
+                <div class="details">
+                    <div class="content">
+                        <h2>What is Za Warudo ?</h2>
+                        <p>The stand Za Warudo, the world. ZA WARUUUUDO TOKY WA TOMARUUU</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    
     <?php
     include('piedPage.php');
     ?>
