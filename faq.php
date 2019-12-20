@@ -13,8 +13,8 @@ session_start();
               href="stylesCss/styleMain.css">
         <link rel="stylesheet"
               href="stylesCss/styleFAQ.css">
-        <script src="jquery-3.4.1.min.js"></script>
-        <script src="deroule.js"></script>
+       <script src="jquery-3.4.1.min.js"></script>
+        <script src="deroule.js"></script> 
         
     </head>
 
